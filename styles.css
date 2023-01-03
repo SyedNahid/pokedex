@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap");
+body {
+  background-image: url("https://assets.pokemon.com/static2/_ui/img/chrome/body_bg.png");
+  background-attachment: fixed;
+  padding-top: 0;
+  margin: 0 auto;
+  color: ivory;
+  font-family: "Exo 2", sans-serif;
+  overflow-x: hidden;
+}
+img {
+  position: relative;
+  height: 215px;
+  width: 215px;
+  left: 12px;
+  top: 10px;
+  border-radius: 10px;
+  background-color: #919191;
+}
+h1 {
+  color: #919191;
+  position: relative;
+  left: 20px;
+}
+h2{
+  display: inline-block;
+  margin-bottom: 0;
+
+  position: relative;
+  left:75px;
+}
+h3 {
+  position: relative;
+  left: 55px;
+  margin-bottom: 0;
+}
+td{
+  margin: 0;
+}
+option{
+  background-color: white;
+  margin-right: 10px;
+}
+.typesAndWeakness{
+  padding-left: 10px;
+  appearance: none;
+  height: 50px;
+  width: 225px;
+  font-family: "Exo 2", sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+}
+.searchBar {
+  position: relative;
+  top:50px;
+  right:100px;
+  width: 300px;
+  height: 50px;
+  font-family: "Exo 2", sans-serif;
+  padding-left: 10px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+}
+.searchHolderDiv {
+  display: flex;
+  flex-wrap: nowrap;
+  position: relative;
+  top:-3px;
+  padding-top: 1px;
+  background-color: #191A19;
+  margin-bottom: 0;
+  height: 125px;
+}
+.container-flex {
+  padding-top: 25px;
+  justify-content: space-evenly;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  background-color: ivory;
+  height: 1250px;
+  width: 1000px;
+  border-radius: 10px;
+}
+.abilities {
+  display: inline-block;
+  text-align: center;
+  margin-right: 5px;
+  height: 13px;
+  font-weight: bolder;
+  width: 40px;
+  font-size: x-small;
+  position: relative;
+  bottom: 35px;
+  left: 20px;
+  border: solid black 0.5px;
+  border-radius: 3px;
+  padding: 1px;
+}
+.card{
+  background-color: ivory;
+  color: #282A3A;
+  width: 240px;
+  height: 300px;
+  border-radius: 10px;
+}
+.randomizer{
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/5/53/Pok%C3%A9_Ball_icon.svg");
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left:95px;
+  bottom: 33px;
+  
+}
+.randomizer:hover{
+    animation: pokeBallanim 0.5s;
+}
+.randomizerText{
+  position: relative;
+  top:60px;
+  left:210px;
+  height: 45px;
+  font-size:x-large;
+   
+}
+.card:hover{
+    /* transform: scale(1.09); */
+    animation: cardAnim 0.6s;
+} 
+.charizardFlying{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 10px;
+    background-color: transparent;
+    height: 100px;
+}
+.asset{
+    height: 100px;
+    width: 150px;
+    background-color: transparent;
+    animation: dragonAnim 11s;
+    animation-iteration-count: infinite;
+}
+.deco{
+  height: 100px;
+  width: 100px;
+  background-color: #191A19;
+  transform: rotate(45deg);
+  position: relative;
+  bottom: 40px;
+  z-index: -1;
+  border-radius: 100px;
+  
+}
+.sortBytext{
+  position: relative;
+  height: 30px;
+
+  left:380px;
+}
+.advancedSearch{
+  display: none;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  margin-top:0;
+  margin-bottom: 20px;
+  height: 250px;
+  background-color: #616161;
+  margin-bottom: 10px;
+}
+.advancedseachDropDown{
+  position: relative;
+  font-family: "Exo 2", sans-serif;
+  font-size: medium;
+  color: whitesmoke;
+  top:100px;
+  font-weight: bolder;
+  right:430px;
+  width: 145px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: #30a7d7;
+}
+@keyframes cardAnim{
+    from{
+        transform: translateY(-3px);
+    }
+    to{
+        transform: translateY(0);
+    }
+
+}
+@keyframes pokeBallanim{
+    from{
+        transform: translateX(-1px);
+    }
+    50%{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(1px);
+    }
+
+}
+@keyframes dragonAnim {
+    from{
+        transform: translateX(1450px);
+    }
+    to{
+       transform: translateX(-200px);
+    } 
+}
+#sort{
+  padding-left: 10px;
+  appearance: none;
+  height: 50px;
+  width: 250px;
+  font-family: "Exo 2", sans-serif;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  position: relative;
+  left:310px;
+  top:49px;
+}
+#advancedSearch--Filter--Asset-1{
+width:500px;
+}
+#abilities-Filter-Bar{
+  height: 50px;
+  width: 250px;
+  font-family: "Exo 2", sans-serif;
+  padding-top: 8px;
+  padding-left: 10px;
+  padding-bottom: 8px;
+  border-radius: 10px;
+  position: relative;
+  top:81px;
+  right:60px;
+}
+.typesAndWeakness{
+  overflow-y: scroll; 
+  text-align: center;
+}
+.typesAndWeakness::-webkit-scrollbar {
+  display: none;
+}
+.errorMessage{
+  padding-top: 20px;
+  background-color:white;
+  height: 200px;
+  width: 600px;
+  color: #191A19;
+  padding-left: 10px;border: solid red 1px;
+  border-radius: 10px;
+}
+.typesAndWeakSearch{
+  height: 35px;
+  width: 55px;
+  border-radius: 10px;
+  background-color: #ee6b2f;
+  color: ivory;
+  font-family: "Exo 2", sans-serif;
+  font-size: larger;
+  font-weight: bold;
+}
+.goAndResetButton{
+  position: relative;
+  top:120px;
+  left:65px;
+  width: 130px;
+}
+
+
+
+
+/* Types Color Codes  */
+.bug {
+  background-color: #729f3f;
+}
+.dragon {
+  background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+  background-color: #53a4cf;
+}
+.fairy {
+  background-color: #fdb9e9;
+}
+.fire {
+  background-color: #fd7d24;
+}
+.ghost {
+  background-color: #7b62a3;
+}
+.ground {
+  background: linear-gradient(180deg, #f7de3f 50%, #ab9842 50%);
+  background-color: #f7de3f;
+}
+.normal {
+  background-color: #a4acaf;
+}
+.psychic {
+  background-color: #f366b9;
+}
+.steel {
+  background-color: #9eb7b8;
+}
+.dark {
+  background-color: #707070;
+}
+.electric {
+  background-color: #eed535;
+}
+.fighting {
+  background-color: #d56723;
+}
+.flying {
+  background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+  background-color: #3dc7ef;
+}
+.grass {
+  background-color: #9bcc50;
+}
+.ice {
+  background-color: #51c4e7;
+}
+.poison {
+  background-color: #b97fc9;
+}
+.rock {
+  background-color: #a38c21;
+}
+.water {
+  background-color: #4592c4;
+}
